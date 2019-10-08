@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<E360>
+  <Page Name="Login">
+    <Object Name ="txtLogin" LocatorName="name" LocatorValue ="Username"/>//"UserName"
+    <Object Name ="txtPassword" LocatorName ="name" LocatorValue ="Password"/>//Password
+    <Object Name ="btnLogin" LocatorName ="Xpath" LocatorValue ="/html/body/div/div/div/form/div[4]/button"/>//"/html/body/div/form/input[5]"/>
+  </Page>
+  
+  <Page Name ="HamburgerPage">
+    <Object Name ="HamburgerIcon" LocatorName="Xpath" LocatorValue ="/html/body/div[1]/nav/div/button"/>
+    <Object Name ="Hambuger_dropdown" LocatorName="CssSelector" LocatorValue =".auto-clear.nav-toggle.title.flip"/>
+    <Object Name ="ViewGroupedCodelists_button" LocatorName="Xpath" LocatorValue ="//li[@class='']/ul"/>    
+  </Page>
+  
+  <Page Name ="GroupedCodelistWorkspace">
+    <Object Name ="New_GroupedCodelist_button" LocatorName="id" LocatorValue ="New Grouped Codelist"/>       
+  </Page>
+  <Page Name="Dashboard">
+    <Object Name ="Workspaces" LocatorName ="Xpath" LocatorValue="//*[@id='horizontalNav_Workspaces']"/>
+  </Page>
+  <Page Name="Personalworkspace">
+
+    <Object Name ="PSBreadcrumb" LocatorName="Xpath" LocatorValue ="//*[@id='breadcrumbMenu']/li/a/span"/>
+
+    <Object Name ="Datasetdropdown" LocatorName="Xpath" LocatorValue ="//*[@id='listFilter']/div/div[1]/div[1]/div/div[1]/button"/>
+
+    <Object Name ="Dataset" LocatorName="Xpath" LocatorValue ="//*[@id='datasetTable']/tbody/tr[9]"/>
+
+    <Object Name ="CreateButton" LocatorName="xpath" LocatorValue ="//button[@class='btn btn-success dropdown-toggle']"/>
+
+    <Object Name ="Dropdownlist" LocatorName="Xpath" LocatorValue ="//div[@class='dropdown-menu dropdown-menu-right show']"/>
+
+    <Object Name ="GroupedCodelist" LocatorName="Xpath" LocatorValue ="//button[@class='dropdown-item']"/>  
+    
+  </Page>
+  
+  <Page Name="NewCodelistModal">
+    <Object Name ="DatasetDropdownbutoon" LocatorName ="Xpath" LocatorValue="//button[@class='btn btn-dark dropdown-toggle']"/>
+    <Object Name ="DatasetDropdownlist" LocatorName ="Xpath" LocatorValue="//table[@id='datasetTableModal']"/>
+    <Object Name ="OMOPDataset" LocatorName ="Xpath" LocatorValue="//td[@data-schema-type='OMOP']"/>
+    <Object Name ="Codelisttype" LocatorName ="Xpath" LocatorValue="//select[@id='CodelistType']"/>
+    <Object Name ="Codelisttypedropdown" LocatorName ="Xpath" LocatorValue="//select[@class='form-control valid']/option"/>
+    <Object Name ="Name" LocatorName ="Xpath" LocatorValue="//*[@id='Name']"/>
+    <Object Name ="Notes" LocatorName ="Xpath" LocatorValue="//textarea[@class='form-control']"/>
+    <Object Name ="groupsbutton" LocatorName ="Xpath" LocatorValue="//div[@class='switch custom-control custom-checkbox']"/>
+    <Object Name ="AcceptButton" LocatorName ="id" LocatorValue="accept"/>
+  </Page>
+  
+  <Page Name="Codelistpage">
+    <Object Name ="CodelistName" LocatorName ="Xpath" LocatorValue="//span[@class='title-text']"/>
+    <Object Name ="CodelistNotes" LocatorName ="Xpath" LocatorValue="//span[@class='title-text']"/>    
+    <Object Name ="Settingsicon" LocatorName ="Xpath" LocatorValue="//*[@class = 'svg-icon _clickable icon-settings']"/>
+    <Object Name ="Packageinfo" LocatorName ="Xpath" LocatorValue="//ul[@class='package-info _flex-fill-rest']/li"/>
+    <Object Name ="ExportImportbutton" LocatorName ="Xpath" LocatorValue="//div[@class='btn-group']"/>
+    <Object Name ="Savebutton" LocatorName ="Xpath" LocatorValue="//*[@id='root']/div/div[2]/div[5]/button"/>
+    <Object Name ="Title" LocatorName ="Xpath" LocatorValue="//div[@class='_inline-block _flex-fill-rest']/h2"/>    
+    <Object Name ="Addcodesbutton" LocatorName ="Xpath" LocatorValue="//a[@class='add-items-button']"/>
+    <Object Name ="Addcodestext" LocatorName ="Xpath" LocatorValue="//div[@class='placeholder']"/>
+    <Object Name ="Addcodeslist" LocatorName ="Xpath" LocatorValue="//*[@id='root']/div/div[3]/div/div/div/div/div/ul/li"/>    
+    <Object Name ="Footer" LocatorName ="Xpath" LocatorValue="//p[@class='muted credit center']/span"/>
+    <Object Name ="GroupedCodelistTitle" LocatorName ="Xpath" LocatorValue="//div[@class='groups-list']/h3"/>
+    <Object Name ="FirstGroup" LocatorName ="Xpath" LocatorValue="//span[@class='title-text']"/>
+    <Object Name ="AddGroup" LocatorName ="Xpath" LocatorValue="//button[@class='wide-button btn btn-success']"/>
+    <Object Name ="centerTitle" LocatorName ="Xpath" LocatorValue="//span[@class='title-text']"/>
+    <Object Name ="AddGroup" LocatorName ="Xpath" LocatorValue="//button[@class='wide-button btn btn-success']"/>
+  </Page>
+
+  <Page Name="AddCodes">
+    <Object Name ="CustomQuery" LocatorName ="CssSelector" LocatorValue=".-blue"/>
+    <Object Name ="Table" LocatorName ="CssSelector" LocatorValue=".ims-table.look-up-table._absolute.fixedDataTableLayout_main.public_fixedDataTable_main"/>
+    <Object Name ="AddSelected" LocatorName ="Xpath" LocatorValue="//button[@class='button inline-button']"/>
+    <Object Name ="AddcodeForm" LocatorName ="Xpath" LocatorValue="//div[@class='popover-component searchable-groups-list bottom']"/>
+    <Object Name ="Untitled" LocatorName ="Xpath" LocatorValue="//ul[@class='drop-down-groups-list']/li"/>
+    <Object Name ="Addbutton" LocatorName ="Xpath" LocatorValue="//button[@class='btn btn-primary']"/>
+    <Object Name ="Groupedcodelistsection" LocatorName ="Xpath" LocatorValue="//div[@class='groups-list']"/>
+    <Object Name ="GroupName" LocatorName ="Xpath" LocatorValue="//span[@class='title-text']"/>
+    <Object Name ="GroupNumber" LocatorName ="Xpath" LocatorValue="//span[@class='total-members']"/>
+  </Page>
+  
+  <Page Name="CodelistsettingsModal">
+    <Object Name ="modal" LocatorName ="Xpath" LocatorValue="//div[@class='ims-modal']"/>
+    <Object Name ="ToggleLabel" LocatorName ="Xpath" LocatorValue="//span[@class='toggle-label']"/>
+    <Object Name ="ToggleButton" LocatorName ="Xpath" LocatorValue="//span[@class='toggle-thumb']"/>
+    <Object Name ="ApplyButton" LocatorName ="Xpath" LocatorValue="//button[@class='-button action-button btn-focus']"/>
+  </Page>  
+  
+<Page Name="AddNewGroup">
+    <Object Name ="Addgroupbutton" LocatorName ="Xpath" LocatorValue="//button[@class='wide-button btn btn-success']"/>
+    <Object Name ="EditGroupIcon" LocatorName ="Xpath" LocatorValue="//span[@class='edit-icon _clickable']"/>
+    <Object Name ="EditGroupName" LocatorName ="Xpath" LocatorValue="//input[@class='editable-title-field']"/>
+    <Object Name ="OKButton" LocatorName ="Xpath" LocatorValue="//button[@class='-button']"/>    
+  </Page>
+
+  <Page Name="DeleteGroup">    
+    <Object Name ="TrashIcon" LocatorName ="Xpath" LocatorValue="//span[@class='fa fa-trash-o']"/>
+  </Page>
+
+  <Page Name="RemoveCodes">
+    <Object Name ="FirstRow" LocatorName ="Xpath" LocatorValue="//div[@class='fixedDataTableRowLayout_rowWrapper']"/>
+    <Object Name ="RemoveselectedButton" LocatorName ="Xpath" LocatorValue="//button[@class='-button inline-button']"/>
+    <Object Name ="RemoveselectedWindow" LocatorName ="Xpath" LocatorValue="//div[@class='codelist-remove-controls']"/>
+    <Object Name ="RemoveButton" LocatorName ="Xpath" LocatorValue="//button[@class='btn btn-danger']"/>
+    <Object Name ="RemovecodelistNotification" LocatorName ="Xpath" LocatorValue="//div[@class='notification notification-success notification-visible']"/>
+    <Object Name ="InputTextbox" LocatorName ="Xpath" LocatorValue="//input[@class='form-control']"/>
+    <Object Name ="RemoveAll" LocatorName ="Xpath" LocatorValue="//button[@class='-button inline-button']"/>
+  </Page>
+
+  <Page Name="CodelistGroups">
+    <Object Name ="FirstGroup" LocatorName ="Xpath" LocatorValue="//span[@class='title-text']"/>
+    <Object Name ="MoveSelected" LocatorName ="Xpath" LocatorValue="//button[@class='-button inline-button']"/>
+    <Object Name ="MoveForm" LocatorName ="Xpath" LocatorValue="//div[@class='popover-component searchable-groups-list bottom']"/>
+    <Object Name ="Untitled" LocatorName ="Xpath" LocatorValue="//ul[@class='drop-down-groups-list']/li/button"/>
+    <Object Name ="Movebutton" LocatorName ="Xpath" LocatorValue="//button[@class='btn btn-primary']"/>
+    <Object Name ="InputTextbox" LocatorName ="Xpath" LocatorValue="//input[@class='form-control']"/>
+    <Object Name ="MoveAll" LocatorName ="Xpath" LocatorValue="//button[@class='-button inline-button']"/>
+    <Object Name ="MoveAllForm" LocatorName ="Xpath" LocatorValue="//div[@class='popover-component searchable-groups-list bottom']"/>
+    <Object Name ="Untitled" LocatorName ="Xpath" LocatorValue="//ul[@class='drop-down-groups-list']/li/button"/>
+    <Object Name ="Movebutton" LocatorName ="Xpath" LocatorValue="//button[@class='btn btn-primary']"/>
+  </Page>
+</E360>
+

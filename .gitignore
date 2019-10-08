@@ -1,0 +1,12 @@
+# tempfiles
+.vs
+.vscode
+bin
+obj
+
+Drivers
+
+*.user
+
+.idea
+Company.Project.App.AutomatedTests.csproj
